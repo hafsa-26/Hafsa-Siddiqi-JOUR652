@@ -30,3 +30,13 @@ h1{
 .nav-link:hover {
     color:darkolivegreen;
 }
+
+.video {
+  margin: 40px auto;
+  width: 560px;
+  text-align: center;
+}
+
+.video iframe {
+    border-radius: 12px;
+}
