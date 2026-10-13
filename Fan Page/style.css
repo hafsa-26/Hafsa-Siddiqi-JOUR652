@@ -1,3 +1,7 @@
+* {
+    background-color:bisque;
+}
+
 .gallery {
     column-count: 3;
     max-width: 1200px;
@@ -18,7 +22,7 @@
 
 body {
     font-family: "Fraunces", serif;
-    font-weight: 200;
+    font-weight: 300;
     color:darkolivegreen;
 }
 
@@ -27,7 +31,19 @@ h1{
     text-align:center;
 }
 
-.nav-link:hover {
+.nav-button {
+    display:block;
+    margin: 20px auto;
+    font-size: 17px;
+    text-decoration-line: underline;
+    text-decoration-color:darkolivegreen;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-style:dotted;
+    text-align:center;
+}
+
+.nav-button:hover, .nav-link:hover{
     color:darkolivegreen;
 }
 
