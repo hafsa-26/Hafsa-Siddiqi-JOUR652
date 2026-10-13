@@ -1,0 +1,31 @@
+.gallery {
+    column-count: 3;
+    max-width: 1200px;
+    margin:40px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-bottom: 20px; 
+
+    break-inside: avoid; 
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(240, 109, 39, 0.461);
+}
+
+body {
+    font-family: "Fraunces", serif;
+    font-weight: 200;
+    color:darkolivegreen;
+}
+
+h1{
+    color:brown;
+}
+
+.nav-link:hover {
+    color:darkolivegreen;
+}
