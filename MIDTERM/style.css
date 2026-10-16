@@ -128,16 +128,16 @@ h3 {
 }
 
 .main-columns-row {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 40px;
     width: 100%;
 }
 
 .article {
-    width: 60% !important;
-    min-width: 60% !important;
+    width: 60%;
+    min-width: 60%;
 }
 
 .article p{
@@ -145,24 +145,24 @@ h3 {
 }
 
 .photos-column {
-    width:35% !important;
-    min-width: 35% !important;
-    display: flex !important;
-    flex-direction: column !important;
+    width:35%;
+    min-width: 35%;
+    display: flex;
+    flex-direction: column;
     gap: 35px;
 }
 
 .photo-item {
-    width: 100% !important;
-    margin: 0 0 15px 0 !important;
-    padding:0 !important;
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding:0;
 }
 
 .photo-item img{
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
