@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.main-pg-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-left-column, .main-right-column {
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.main-left-column {
+    background-color:#E0CFB4;
+    color: #ab1100;
+    text-align: center;
+}
+
+.main-right-column {
+    background-color:#ab1100;
+    color:#E0CFB4;
+}
+
+.profile-img {
+    width: 240px;
+    height: 240px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ab1100;
+}
+
+.name {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Epilogue; serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.email-button-container{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin:5px;
+}
