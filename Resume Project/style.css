@@ -17,6 +17,10 @@ body {
     background-color:#E0CFB4;
     color: #ab1100;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-right-column {
@@ -36,27 +40,47 @@ body {
     display: block;
     font-size: 3.5rem;
     font-weight: bold;
-    font-family: "Fraunces", serif;
-    margin-top: 0;
+    font-family: 'Fraunces', serif;
+    margin-top: 20px;
     margin-bottom: 25px;
 }
 
 .title {
     display: block;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-family: Epilogue; serif;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Epilogue', sans-serif;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }
 
-.email-button-container{
-    display: inline-block;
-    padding: 10px 30px;
+.email-button{
+    display: block;
+    width: 320px;
+    background-color: #ab1100;
+    color:#E0CFB4;
+    text-align: center;
     text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 250;
+    padding: 18px 0px;
     border-radius: 4px;
-    margin:5px;
+    margin-bottom:15px;
+}
+
+.social-links {
+    display: flex;
+    width: 320px;
+    justify-content: space-around;
+}
+
+.social-links a {
     color:#ab1100;
+    text-decoration: none;
+    font-family:'Epilogue', sans-serif;
+    font-size: 1.1 rem;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
