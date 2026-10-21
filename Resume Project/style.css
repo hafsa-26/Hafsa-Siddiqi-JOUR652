@@ -26,6 +26,10 @@ body {
 .main-right-column {
     background-color:#ab1100;
     color:#E0CFB4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-img {
@@ -33,7 +37,7 @@ body {
     height: 240px; 
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ab1100;
+    border: 6px solid #ab1100;
 }
 
 .name {
@@ -48,7 +52,7 @@ body {
 .title {
     display: block;
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 425;
     font-family: 'Epilogue', sans-serif;
     margin-top: 10px;
     margin-bottom: 40px;
@@ -64,9 +68,14 @@ body {
     font-family: 'Epilogue', sans-serif;
     font-size: 1.1rem;
     font-weight: 250;
-    padding: 18px 0px;
+    padding: 10px 0px;
     border-radius: 4px;
-    margin-bottom:15px;
+}
+
+.email-button:hover {
+    background-color:#E0CFB4;
+    color:#ab1100;
+    cursor: pointer;
 }
 
 .social-links {
@@ -83,7 +92,56 @@ body {
     font-weight: bold;
 }
 
+.social-links:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .main-pg-container {flex-direction: column;}
     .main-right-column {text-align: center;}
+}
+
+.about {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: left;
+    justify-content: left;
+    line-height: 1.5;
+}
+
+.about-links {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-buttons {
+    display: inline-block;
+    padding: 16px 55px;
+    border: 2px solid #E0CFB4;
+    background-color: transparent;
+    color:#E0CFB4;
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 250;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 130px;
+    margin-top: -20px;
+}
+
+.about-buttons:hover {
+    background-color:#E0CFB4;
+    color:#ab1100;
+    cursor:pointer;
 }
