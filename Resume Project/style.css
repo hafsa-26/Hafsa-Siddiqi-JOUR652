@@ -56,4 +56,10 @@ body {
     text-decoration: none;
     border-radius: 4px;
     margin:5px;
+    color:#ab1100;
+}
+
+@media (max-width: 768px) {
+    .main-pg-container {flex-direction: column;}
+    .main-right-column {text-align: center;}
 }
