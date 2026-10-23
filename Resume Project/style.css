@@ -1,16 +1,30 @@
-body {
-    margin: 0;
+html {
+    scroll-behavior: smooth;
 }
 
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* stops any glitching when scrolling horizontally */
+}
+
+/* ensures the master box scales cleanly to match the browser window boundaries */
 .main-pg-container {
     display: flex;
     min-height: 100vh;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .main-left-column, .main-right-column {
     flex: 1;
     padding: 50px;
-    box-sizing: border-box;
+    min-width: 0;
 }
 
 .main-left-column {
@@ -27,9 +41,10 @@ body {
     background-color:#ab1100;
     color:#E0CFB4;
     text-align: center;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
+    padding-top: 75px;
 }
 
 .profile-img {
@@ -38,13 +53,18 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid #ab1100;
+    outline: 1px solid saddlebrown;
+    outline-offset: 4px;
+    margin-bottom: 24px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.18);
 }
 
 .name {
     display: block;
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     font-weight: bold;
     font-family: 'Fraunces', serif;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
     margin-bottom: 25px;
 }
@@ -60,7 +80,8 @@ body {
 
 .email-button{
     display: block;
-    width: 320px;
+    width: 320px; /* forces the button block to match the wide layout */
+    max-width: 100%; /* protexts the layout bounds when the window scales down */
     background-color: #ab1100;
     color:#E0CFB4;
     text-align: center;
@@ -81,26 +102,24 @@ body {
 .social-links {
     display: flex;
     width: 320px;
-    justify-content: space-around;
+    mad-width: 100%;
+    justify-content: space-between; /* pushes the linkedin and github buttons to either ends
+    margin: 0 auto; /*centers container so that it's horizontal inside the flex wrapper */
 }
 
 .social-links a {
     color:#ab1100;
     text-decoration: none;
     font-family:'Epilogue', sans-serif;
-    font-size: 1.1 rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.social-links:hover {
+/* this allows each individual link to be highlighted when you hover over it vs both at the same time bc they live in the same wrapper box parent */
+.social-links a:hover {
     opacity: 0.7;
     text-decoration: underline;
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .main-pg-container {flex-direction: column;}
-    .main-right-column {text-align: center;}
 }
 
 .about {
@@ -110,18 +129,26 @@ body {
     font-family: 'Fraunces', serif;
     margin-top: 50px;
     margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 p {
+    font-family: 'Epilogue', sans-serif;
+    font-size:smaller;
     text-align: left;
     justify-content: left;
-    line-height: 1.5;
+    line-height: 1.6;
+    word-wrap: break-word; /* forces any long word strings to stay text bound */
 }
 
 .about-links {
     display: flex;
+    flex-wrap: wrap; /* super important! it allows the navigation links to wrap to a new line on narrow devices */
     gap: 30px;
     margin-top: 40px;
+    justify-content: center;
 }
 
 .about-buttons {
@@ -145,3 +172,140 @@ p {
     color:#ab1100;
     cursor:pointer;
 }
+
+.exp-section{
+    background-color: #E0CFB4;
+    padding: 60px 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.exp-banner {
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+
+}
+
+.banner-title {
+    font-family: 'Fraunces', serif;
+    font-size: 3.5rem;
+    color:#ab1100; 
+    display: block;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.exp-columns-wrapper{
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+.exp-column {
+    flex: 1; /* this splits the text layout perfectly 50/50 on full page */
+    color: #ab1100;
+}
+
+/* this adds a dotted divider between the two containers */
+.exp-column:first-child {
+    border-right: 1px dotted black;
+    padding-right: 40px; /* adds an internal padding so the text doesn't hug the dotted line */
+}
+
+.exp-column h2 {
+    font-family: 'Fraunces', serif;
+}
+
+.exp-column h3 {
+    font-family:'Epilogue', sans-serif;
+    font-weight:300;
+}
+
+.exp-column h4 {
+    font-family:'Epilogue', sans-serif;
+    font-weight:300;
+    font-style: italic;
+}
+
+.exp-column p {
+    font-family:'Epilogue', sans-serif;
+    line-height: 1.5;
+}
+
+.ed-footer-box {
+    display: flex;
+    justify-content: space-between; /*ensures title stays to left, degrees to right */
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 30px;
+    box-sizing:border-box;
+    border: 1px solid black;
+}
+
+.ed-sec-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    color:#ab1100; 
+    margin: 0;
+    flex: 1;
+}
+
+.ed-columns {
+    display: flex;
+    gap: 60px;
+    flex: 2;
+    justify-content: flex-end;
+
+}
+
+.ed-item {
+    text-align: center;
+}
+
+.ed-degree{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color:#ab1100;
+    margin-bottom: 6px;
+
+}
+
+.ed-details{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color:#ab1100;
+}
+
+
+@media (max-width: 768px){
+    .main-pg-container {flex-direction: column;}
+    .main-left-column, .main-right-column {
+        width: 100%;
+        padding: 40px 25px;
+    }
+    .about {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    .main-right-column {
+        text-align:center;
+    }
+    .about-links  {
+        justify-content: center;
+    }
+    .exp-columns-wrapper {
+        flex-direction:column; /* stacks experience columns vertically on mobile */
+        gap: 40px;
+    }
+    .exp-column:first-child {
+        border-right: none; /* removes the dotted line on mobile devices for a clean look */
+        padding-right: 0;
+    }
+} 
