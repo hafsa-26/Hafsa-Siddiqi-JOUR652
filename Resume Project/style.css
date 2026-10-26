@@ -214,6 +214,12 @@ p {
 
 }
 
+.banner-title:hover {
+    font-style:italic;
+    transition: font-style 0.05s ease;
+    cursor: pointer;
+}
+
 .exp-columns-wrapper{
     display: flex;
     gap: 60px;
@@ -233,12 +239,6 @@ p {
 
 .exp-column h2 {
     font-family: 'Fraunces', serif;
-}
-
-.job-title:hover{
-    font-style:italic;
-    transition: font-style 0.05s ease;
-    cursor: pointer;
 }
 
 .exp-column h3 {
@@ -332,6 +332,12 @@ p {
 
 }
 
+.skills-banner-title:hover{
+    font-style:italic;
+    transition: font-style 0.05s ease;
+    cursor: pointer;
+}
+
 .skills-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -395,6 +401,31 @@ p {
 .skill-card:hover .skill-example{
     color:#E0CFB4;
     transition: color 0.05s ease-in-out;
+}
+
+.top-link-wrapper{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+.back-to-the-top-btn{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#E0CFB4;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.05s ease-in-out;
+}
+
+.back-to-the-top-btn:hover {
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .footer-box{
@@ -515,8 +546,12 @@ p {
     }
     .skills-grid .skill-card:first-child,
     .skills-grid .skill-card:last-child {
-        grid-column: span 1 !important;
-
+        grid-column: span 1 !important;   
+    }
+    .top-link-wrapper{
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: -20px;
     }
     .footer-content {
         flex-direction: column;
