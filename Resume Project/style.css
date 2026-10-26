@@ -419,7 +419,7 @@ p {
     margin: 0;
 }
 
-.footer-email{
+.footer-email a{
     font-family: 'Epilogue', sans-serif;
     color:#E0CFB4;
     font-size: 0.9rem;
