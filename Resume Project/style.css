@@ -134,19 +134,11 @@ body {
     font-size: 3.5rem;
     font-weight: bold;
     font-family: 'Fraunces', serif;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 10px;
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
 
-}
-
-#about-me, .about-section {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 0 20px;
-    line-height: 1.6;
 }
 
 .about:hover {
