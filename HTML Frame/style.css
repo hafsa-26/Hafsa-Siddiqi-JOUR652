@@ -29,5 +29,5 @@ p{
     line-height: 180%;
     text-align: justify;
     color:darkslategrey;
-    margin-bottom: 1.75em;
+    margin-bottom: 1.75em !important;
 }
