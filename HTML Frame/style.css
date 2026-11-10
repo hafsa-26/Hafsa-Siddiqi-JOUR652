@@ -1,0 +1,32 @@
+#headline{
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color:darkslategrey;
+}
+
+#byline{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color:darkslategrey;
+}
+
+#subhead{
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Verdana', sans-serif;
+    text-align: left;
+    color:darkslategrey;
+}
+p{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Verdana', sans-serif;
+    line-height: 180%;
+    text-align: justify;
+    color:darkslategrey;
+}
